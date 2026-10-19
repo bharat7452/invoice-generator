@@ -1,0 +1,16 @@
+# Render Blueprint: one web service serves both the API and the built React app.
+services:
+  - type: web
+    name: invoice-generator
+    runtime: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGODB_URI
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true

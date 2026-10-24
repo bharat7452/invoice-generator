@@ -2,7 +2,7 @@
 
 A full-stack MERN web app that lets small businesses create, track and print professional invoices.
 
-**Live demo:** _add your deployed link here_
+  **Live demo:** https://invoice-generator-oykr.onrender.com
 
 ## Features
 
